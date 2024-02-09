@@ -10,6 +10,10 @@ accountCity = "Bharatpur";
 accountEmail = "byebyeworld@gmail.com";
 accountPassword= "26435889644";
 accountCity="Kathmandu";
+let accountState;
 
-console.table([accountID,accountEmail,accountPassword,accountCity]);
+console.table([accountID,accountEmail,accountPassword,accountCity,accountState]);
 
+/* Prefer not to use var 
+because of issue in block scope and functional scope. 
+*/
