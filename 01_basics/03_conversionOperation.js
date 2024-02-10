@@ -38,7 +38,54 @@
 // "" -> false; 
 // "Rajeshwari" -> true;
 
-let someNumber = 33;
-let stringNumber = String(someNumber);
-console.log(stringNumber);
-console.log(typeof stringNumber);
+// let someNumber = 33;
+// let stringNumber = String(someNumber);
+// console.log(stringNumber);
+// console.log(typeof stringNumber);
+
+
+// --------- Operations -------------
+
+
+//  let value = 3;
+//  let negValue = -value;
+//  console.log(negValue);
+
+
+//  let str1 = "hello";
+//  let str2 = " Rajeshwari";
+//  let str3 = str1 + str2;
+//  console.log(str3);
+
+
+// console.log("1"+ 2 + 2); // output -> 122 // string first so all treated as string
+// console.log(1+ 2 + "2"); // output -> 32 
+
+// console.log(+true);
+// console.log(+"");
+
+// let gameCounter = 100;
+// gameCounter++;
+// console.log(gameCounter);
+
+
+// let gameCounter = 100;
+// ++gameCounter;
+// console.log(gameCounter);
+
+// let y = 5;
+// let x = ++y;
+// console.log(x); gives 6
+
+
+let y = 5;
+let x = y++;
+console.log(x);
+
+// If used postfix, with operator after operand (for example, x++), 
+// the increment operator increments and returns the value before incrementing.
+
+//If used prefix, with operator before operand (for example, ++x), 
+//the increment operator increments and returns the value after incrementing.
+
+
