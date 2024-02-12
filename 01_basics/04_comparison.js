@@ -14,5 +14,6 @@
 
 // console.log("2"==2);  //here conversion takes place
 console.log("2"===2); // here it checks data type also , no conversion, it says "2" and 2 are not same.
-// 
+
+// focus on clean code.
  
