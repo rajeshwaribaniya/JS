@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML events</title>
+</head>
+<body style="background-color: #484848; color:azure;">
+    <h2>Amazing Images</h2>
+    <div>
+        <ul id = "images">
+
+           <li><img width = "200px" id="photoshop" src="https://images.pexels.com/photos/3427774/pexels-photo-3427774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="photoshop"></li>
+
+           <li><img width = "200px" id="japan" src="https://images.pexels.com/photos/402028/pexels-photo-402028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="japan"></li>
+
+           <li><img width = "200px" id="river" src="https://images.pexels.com/photos/2189700/pexels-photo-2189700.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="river"></li>
+
+           <li><img width = "200px" id="owl" src="https://images.pexels.com/photos/1804976/pexels-photo-1804976.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="owl"></li>
+
+           <li><img width = "200px" id="prayer" src="https://images.pexels.com/photos/57901/pexels-photo-57901.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="prayer"></li>
+
+           <li><a style="color: aliceblue;" href="https://www.google.com/" id="google">Google</a></li>
+
+
+        </ul>
+    </div>
+</body>
+
+<script>
+
+    // document.getElementById('owl').onclick = function(){
+    //     alert("Owl clicked");
+    // }
+
+      //type, timestamp, defaultPrevented, 
+    // target, toElement, srcElement, currentTarget
+    //clientX, clientY, screenX, screenY
+    //altkey, ctrlkey, shiftkey, keyCode
+
+    // default value --> false
+    // false -> Event Bubbling --> inside to outside
+
+    // true --> Event capturing  --> outside to inside
+    //Whenever the third argument of addEventListener is set to true , event handlers are automatically triggered in the capturing phase.
+
+    // false
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("Clicked inside the ul.");
+    // },false)
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked.");
+    // },false)
+
+    // true
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("Clicked inside the ul.");
+    // },true)
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked.");
+    // },true)
+
+    // false
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log("Clicked inside the ul.");
+    },false)
+
+    document.getElementById('owl').addEventListener('click', function(e){
+        console.log("owl clicked.");
+        e.stopPropagation();
+    },false)
+
+
+  
+</script>
+</html>
