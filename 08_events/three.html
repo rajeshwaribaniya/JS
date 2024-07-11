@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Javascript | Rajeshwari Baniya</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+   
+</body>
+<script>
+    // const sayDate = function(){
+    //     console.log("Rajeshwari Baniya", Date.now());
+    // }
+
+    // setInterval(sayDate, 1000)
+
+    // const sayDate = function(str){
+    //     console.log(str, Date.now());
+    // }
+
+//    const intervalId = setInterval(sayDate, 1000, "Hello, from Rajeshwari Baniya.");
+//    clearInterval(intervalId)
+
+let clear;
+const printMe = function(){
+    console.log("Rajeshwari", Date.now());
+}
+
+const IntervalId = function(){
+    clear = setInterval(printMe, 1000)
+}
+
+const clearId = function(){
+    clearInterval(clear);
+}
+
+document.querySelector("#start").addEventListener('click', IntervalId);
+document.querySelector("#stop").addEventListener('click', clearId);
+
+
+    
+</script>
+</html>
